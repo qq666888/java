@@ -2,10 +2,11 @@ package java1702.javase.oop;
 
 /**
  * Created by $qiqi
- * on 2017/3/24.
+ * on 2017/3/19.
  * java
  */
 public class ScopeTest {//范围，类的作用域范围，从类的起始，到类的终止
+
 //    private  int i;//域
 
 //    public void method() {
