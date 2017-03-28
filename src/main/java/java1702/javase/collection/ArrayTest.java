@@ -11,13 +11,26 @@ public class ArrayTest {//Array数组
         strings=new String[10];
         System.out.println(strings[0]);//下标。索引
         boolean[]booleans=new boolean[100];
+        booleans[0] = true;
         System.out.println(booleans[99]);
 
-        int[] ints=new int[1000];
-        System.out.println(ints[1]);
+        int[] ints = {1, 2, 3, 4, 5, 6, 67777, 888};
+        System.out.println(ints[6]);
 
-        double[] doubles=new double[10000];
-        System.out.println(doubles[999]);
+        double[] doubles = new double[1000];
+        for (int i = 0; i < doubles.length; i++) {
+            doubles[i] = i + 1;
+        }
+        System.out.println("--->" + doubles[doubles.length - 1]);
+        for (int i = 0; i < doubles.length; i++) {
+            System.out.println(doubles[i]);
+        }
+
+//        int[] ints=new int[1000];
+//        System.out.println(ints[1]);
+//
+//        double[] doubles=new double[10000];
+//        System.out.println(doubles[999]);
         ArrayTest[] arrayTests=new ArrayTest[3];
         arrayTests[0]=new ArrayTest();
         System.out.println(arrayTests[0]);
