@@ -28,6 +28,10 @@ public class VectorTest {
         System.out.println(vector.size());
         System.out.println(vector.capacity());
         // capacity 容量,\ 能力,\ 容积
+        Vector<Integer>integers=new Vector<>();
+        integers.add(1);
+        System.out.println(integers.size());
+        System.out.println(integers.capacity());
 
         Set<java.lang.String> strings = new HashSet<>();
         strings.add("a");
