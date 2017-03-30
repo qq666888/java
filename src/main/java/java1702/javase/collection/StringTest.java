@@ -10,8 +10,8 @@ import javax.sound.midi.Soundbank;
  */
 public class StringTest {
     public static void main(String[] args) {
-        String s = "hello";
-        String s1 = "asdf";
+        java.lang.String s = "hello";
+        java.lang.String s1 = "asdf";
 
         char[] chars = {'H', 'e', 'l', 'l', 'o'};
         String s2 = new String(chars);
@@ -22,7 +22,7 @@ public class StringTest {
 //            System.out.println(c);
         }
 
-        String s3 = "Hello"; // hello HELLO
+        java.lang.String s3 = "Hello"; // hello HELLO
         System.out.println(toLowerCase(s3));
         System.out.println(toUpperCase(s3));
 
@@ -33,7 +33,7 @@ public class StringTest {
         System.out.println("итальянский".toLowerCase());
         System.out.println("итальянский".toUpperCase());
 
-        String s4 = "итальитальянскийитальянскийитальянскийитальянскийитальянскийянскийa";
+        java.lang.String s4 = "итальитальянскийитальянскийитальянскийитальянскийитальянскийянскийa";
         System.out.println(s4.charAt(s4.length() - 1));
 
         System.out.println(s1);
