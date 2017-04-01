@@ -1,6 +1,7 @@
 package java1702.javase.collection;
 import java.util.Hashtable;
 import java.util.Map;
+import java.util.Scanner;
 
 /**
  * Created by $qiqi
@@ -9,6 +10,10 @@ import java.util.Map;
  */
 public class HashtableTest {
     public static void main(String[] args) {
+        int a=3;
+        int b=4;
+        int c=a!=b? b:a;
+        System.out.println(c);
         // K - key 键  V - value 值
         Hashtable<Integer, java.lang.String> hashtable = new Hashtable<>();
         hashtable.put(1, "hi");
@@ -33,5 +38,6 @@ public class HashtableTest {
         for (Map.Entry<Integer, java.lang.String> integerStringEntry : hashtable.entrySet()) {
             System.out.println(integerStringEntry.getKey() + "->" + integerStringEntry.getValue());
         }
+
     }
 }
