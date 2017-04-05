@@ -11,18 +11,25 @@ import java.lang.reflect.InvocationTargetException;
 public class Tyap {
     public static void main(String[] args) {
         int[][]arr={{1},{2,3},{4,5,6}};
-        for (int i = 0; i < arr.length; i++) {
-            int[] ints = arr[i];
-            for (int j = 0; j < ints.length; j++) {
-                int anInt = ints[j];
-                System.out.print(arr[i][j]+" ");
-
+//        for (int i = 0; i < arr.length; i++) {
+//            int[] ints = arr[i];
+//            for (int j = 0; j < ints.length; j++) {
+//                int anInt = ints[j];
+//                System.out.print(arr[i][j]+" ");
+//
+//            }
+//            System.out.println(" ");
+     //   方法二 foreach语句遍历二维数组
+        for(int i[]:arr){
+            for(int y:i){
+                System.out.print(y+" ");
             }
-            System.out.println(" ");
+            System.out.println();
+        }
 
         }
     }
 
 
 
-}
+
