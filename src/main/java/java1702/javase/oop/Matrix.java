@@ -8,7 +8,7 @@ package java1702.javase.oop;
 //在方法中编写代码，实现3行4列且所有元素都是0的矩阵。
 public class Matrix {
     public static void main(String[] args) {
-        int [][] a=new int[3][4];
+        int[][] a = new int[3][4];
         for (int i = 0; i < a.length; i++) {
 
             for (int j = 0; j < a[i].length; j++) {
@@ -19,6 +19,14 @@ public class Matrix {
             System.out.println(" ");
 
         }
-    }
+////        方法二
+//        int [][]a={
+//                {0,0,0,0},
+//                {0,0,0,0},
+//                {0,0,0,0},
+//        };
+//        System.out.println(a);
+//    }
 
+    }
 }
