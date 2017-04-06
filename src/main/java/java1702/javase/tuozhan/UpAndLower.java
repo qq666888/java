@@ -7,6 +7,7 @@ package java1702.javase.tuozhan;
  */
 //实现字符串的大小写转换
 public class UpAndLower {
+    protected int a;
     public static void main(String[] args) {
         String s=new String("abc EFG");
         String mew1=s.toLowerCase();//小写转换
