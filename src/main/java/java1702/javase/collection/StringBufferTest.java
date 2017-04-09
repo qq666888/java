@@ -25,15 +25,18 @@ public class StringBufferTest {
         s2 += "123"; // string pool : "true" "true123"
 
         System.out.println(stringBuffer.append(true).append(123));
-        System.out.println(stringBuffer.delete(4, 6));
+        System.out.println(stringBuffer.delete(4, 6));//delete删除
         // insert 插入\ [ɪn'sɜːt]
         // offset 偏移,\ 抵消,\ 位移
-        System.out.println(stringBuffer.insert(4, false)); // truefalse3
+        System.out.println(stringBuffer.insert(4, false)); //将数据插入到指定位置
+        // truefalse3
 
         // reverse vt.\ 颠倒；倒转
         System.out.println(stringBuffer.reverse());
 
-        stringBuffer.setCharAt(0,'a');
+        stringBuffer.setCharAt(0,'a');//setCharAt修改
+        stringBuffer.reverse().setCharAt(0,'a');//setCharAt打印出来是逆向的，所以前面加
+       // reverse()翻转过来（上面翻转过一次）
 
         System.out.println(stringBuffer);
     }
