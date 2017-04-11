@@ -1,9 +1,9 @@
 package java1702.javase.collection;
 
 
-import java.awt.*;
+
 import java.util.*;
-import java.util.List;
+import java.util.ArrayList;
 
 /**
  * Created by $qiqi
@@ -12,7 +12,8 @@ import java.util.List;
  */
 public class ArrayListTest {
     public static void main(String[] args) {
-        List<String>list=new ArrayList<>();
+//        List<String>list=new ArrayList<>();
+       List<String>list=new ArrayList<>();
         list.add("hi");
         list.add("hello");
         list.add("test1");
@@ -26,5 +27,12 @@ public class ArrayListTest {
         for(String s:list){
             System.out.println(s);
         }
+        System.out.println(list.contains("test1"));
+        System.out.println(list.containsAll(list));
+        System.out.println(list.indexOf("test1"));
+        System.out.println(list.isEmpty());
+        System.out.println(list.lastIndexOf("test1"));
+
+
     }
 }
