@@ -23,9 +23,9 @@ public class ListIteratorTest {
         ListIterator<String>listIterator=list.listIterator();
         while (listIterator.hasNext()){
             System.out.println(listIterator.nextIndex());
-
+            System.out.println(listIterator.next());
         }
-        System.out.println(listIterator.next());
+
         
 //        System.out.println(listIterator.previous());
 
