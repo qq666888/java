@@ -19,7 +19,8 @@ public class Studedt {
 //        Iterator iterators=list.iterator();//获取迭代器，用于去除集合中的元素
 //        while (iterators.hasNext()){//如果仍有元素可以迭代，则返回 true。
 //            System.out.println(iterators.next());//返回迭代的下一个元素
-//        }
+//        }快捷键itit+tap
+
         for(Iterator iterators=list.iterator();iterators.hasNext();){
             System.out.println(iterators.next());
         }
