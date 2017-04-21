@@ -26,7 +26,7 @@ public class WriterTest {
         } finally {
             if (writer != null) {
                 try {
-                    writer.close();//先调用fiush，然后再关闭
+                    writer.close();//先调用flush，然后再关闭
                     //关闭之后不可以写
                 } catch (IOException e) {
                     e.printStackTrace();
