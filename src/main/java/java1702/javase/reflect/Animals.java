@@ -20,10 +20,6 @@ import java.lang.reflect.Field;
         this.weight = weight;
     }
 
-    public int sleep(int hours) {
-        return hours;
-    }
-
     public void eat(String food) {
         System.out.println("eating " + food);
     }
@@ -39,6 +35,10 @@ import java.lang.reflect.Field;
     public void setAge(int age) {
         this.age = age;
     }
+    int sleep(int hours) {
+        return hours;
+    }
+
 
     public double getWeight() {
         return weight;
@@ -96,14 +96,14 @@ class HumanTest {
     public static void main(String[] args) {
         Human human = new Human();
         Class clazz = human.getClass();
-        Field[] fields = clazz.getFields();
+        Field[] fields = clazz.getFields();//获得所有公有域
         System.out.println("--- getFields() ---");
         for (Field field : fields) {
             System.out.println(field.getName());
         }
         Field[] declaredFields = clazz.getDeclaredFields(); // declared 宣布\ [dɪ'kleəd] 声明
         System.out.println("--- getDeclaredFields() ---");
-        for (Field declaredField : declaredFields) {
+        for (Field declaredField : declaredFields) {//获得此类所有域
             System.out.println(declaredField.getName());
         }
     }
